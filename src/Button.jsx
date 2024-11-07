@@ -1,12 +1,9 @@
-function Button (props){
-
-    return(
-
-        <button onClick = {props.onClick} className={props.class}>{props.label}</button>
-
-    )
-
+function Button({ onClick, className, label }) {
+    return (
+        <button onClick={onClick} className={className}>
+            {label}
+        </button>
+    );
 }
 
-
-export default Button
+export default Button;
